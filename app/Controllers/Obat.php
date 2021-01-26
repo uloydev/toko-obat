@@ -2,6 +2,8 @@
 
 use App\Models\ObatModel;
 use App\Models\StokObatModel;
+use App\Models\LogHargaModel;
+use App\Models\LogStokModel;
 
 class Obat extends BaseController
 {
@@ -9,6 +11,8 @@ class Obat extends BaseController
 	{
 		$this->obat = new ObatModel();
 		$this->stokObat = new StokObatModel();
+		$this->logHarga = new LogHargaModel();
+		$this->logStok = new LogStokModel();
 	}
 
 	public function index()
@@ -57,7 +61,12 @@ class Obat extends BaseController
     }
  
     public function delete($id = null){
+        $obat = $this->obat->where('id_obat', $id)->first();
+        $kodeObat = $obat['kode_obat'];
         $this->obat->where('id_obat', $id)->delete();
+        $this->stokObat->where('id_obat', $id)->delete();
+        $this->logHarga->where('kode_obat', $kodeObat)->delete();
+        $this->logStok->where('kode_obat', $kodeObat)->delete();
 		return 'ok';
     }
 
