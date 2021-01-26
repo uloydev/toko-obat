@@ -12,4 +12,9 @@ class StokObatModel extends Model
         "kode_obat",
         "jumlah",
     ];
+
+    public function getAll()
+    {
+        return $this->db->table('stok_obat')->select('*')->join('data_obat', 'data_obat.id_obat = stok_obat.id_obat' , 'right')->get()->getResult();
+    }
 }

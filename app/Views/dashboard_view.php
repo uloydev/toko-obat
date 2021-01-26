@@ -108,6 +108,50 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
+                <h5 class="modal-title">Edit Obat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="editKode" class="form-control-label">Kode Obat</label>
+                    <input class="form-control" type="text" id="editKode" v-model="kodeObatEdit" required>
+                </div>
+                <div class="form-group">
+                    <label for="editNama" class="form-control-label">Nama Obat</label>
+                    <input class="form-control" type="text" id="editNama" v-model="namaObatEdit" required>
+                </div>
+                <div class="form-group">
+                    <label for="editBentuk" class="form-control-label">Bentuk Obat</label>
+                    <input class="form-control" type="text" id="editBentuk" v-model="bentukObatEdit" required>
+                </div>
+                <div class="form-group">
+                    <label for="editTanggalProduksi" class="form-control-label">Tanggal Produksi</label>
+                    <input class="form-control" type="text" id="editTanggalProduksi" v-model="tanggalProduksiEdit" required>
+                    <small>contoh : 2020-12-29</small>
+                </div>
+                <div class="form-group">
+                    <label for="editTanggalKadaluarsa" class="form-control-label">Tanggal Kadaluarsa</label>
+                    <input class="form-control" type="text" id="editTanggalKadaluarsa" v-model="tanggalKadaluarsaEdit" required>
+                    <small>contoh : 2020-12-29</small>
+                </div>
+                <div class="form-group">
+                    <label for="editHarga" class="form-control-label">Harga</label>
+                    <input class="form-control" type="text" id="editHarga" v-model="hargaEdit" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @click="updateObat">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
                 <h5 class="modal-title">Tambah Obat</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>

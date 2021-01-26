@@ -13,7 +13,7 @@ class Obat extends BaseController
 
 	public function index()
     {
-        echo view('obat');
+        echo view('obat_view');
     }
  
     public function all()
