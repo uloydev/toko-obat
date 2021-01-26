@@ -31,6 +31,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/obat/kadaluarsa">
+                            <i class="ni ni-archive-2 text-orange"></i>
+                            <span class="nav-link-text">Obat Kadaluarsa</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/log/harga">
                             <i class="ni ni-align-left-2 text-orange"></i>
                             <span class="nav-link-text">Log Harga</span>
@@ -40,6 +46,27 @@
                         <a class="nav-link" href="/log/stokobat">
                             <i class="ni ni-align-left-2 text-orange"></i>
                             <span class="nav-link-text">Log Stok Obat</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr class="my-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/penjualan/januari">
+                            <i class="ni ni-bullet-list-67 text-orange"></i>
+                            <span class="nav-link-text">Penjualan januari</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/penjualan/februari">
+                            <i class="ni ni-bullet-list-67 text-orange"></i>
+                            <span class="nav-link-text">Penjualan februari</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/penjualan/maret">
+                            <i class="ni ni-bullet-list-67 text-orange"></i>
+                            <span class="nav-link-text">Penjualan maret</span>
                         </a>
                     </li>
                 </ul>

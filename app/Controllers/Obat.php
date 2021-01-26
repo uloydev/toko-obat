@@ -19,6 +19,14 @@ class Obat extends BaseController
     {
         echo view('obat_view');
     }
+
+    public function kadaluarsa()
+    {   
+        // var_dump($this->obat->where('tanggal_kadaluarsa <', date('Y-m-d'))->get()->getResult());die;
+        echo view('obat_kadaluarsa_view', [
+            'data' => $this->obat->where('tanggal_kadaluarsa <', date('Y-m-d'))->get()->getResult()
+        ]);
+    }
  
     public function all()
     {
